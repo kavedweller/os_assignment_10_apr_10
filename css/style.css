@@ -30,6 +30,12 @@ body {
   font-size: 16px;
 }
 
+/*  */
+
+.text-monospace {
+  font-family: monospace;
+}
+
 @media (min-width: 768px) {
   .carousel-caption-fix {
     max-height: 60%;
