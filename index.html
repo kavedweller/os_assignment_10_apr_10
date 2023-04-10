@@ -14,46 +14,105 @@
 
 <body>
     <header class="container">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="navbar-wrapper">
-                    <div class="container px-0 pb-1">
-                        <nav class="navbar navbar-expand-lg">
-                            <div class="container-fluid">
-                                <a class="navbar-brand fw-semibold fs-2 col-md-2" href="#">Learning.io</a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse col-md-8" id="navbarSupportedContent">
-                                    <ul class="navbar-nav mb-lg-0 mx-auto fw-semibold fs-7">
-                                        <li class="nav-item px-2">
-                                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                                        </li>
-                                        <li class="nav-item px-2">
-                                            <a class="nav-link" href="services.html">Services</a>
-                                        </li>
-                                        <li class="nav-item px-2">
-                                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                                        </li>
-                                        <li class="nav-item px-2">
-                                            <a class="nav-link" href="blog.html">Blog</a>
-                                        </li>
-                                        <li class="nav-item px-2">
-                                            <a class="nav-link" href="about.html">About</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-2">
+        <nav class="navbar navbar-expand-lg mb-lg-5">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-semibold fs-2 col-md-2" href="#">Learning.io</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-md-8" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-lg-0 mx-auto fw-semibold fs-7">
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
 
-                                </div>
+                </div>
+            </div>
+        </nav>
+        <section class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div id="coverSlider" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators -->
+                        <div class="carousel-indicators d-none d-lg-block text-center">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div> <!-- /indicator -->
+
+                        <div class="carousel-inner rounded carousel-fade">
+                            <div class="carousel-item text-white active">
+                                <img src="images/slider/slide-1.jpg" class="img-fluid" alt="Cover image #1">
+                                <!-- carousel text- overlay -->
+                                <div class="carousel-caption overflow-hidden carousel-caption-fix">
+                                    <h5 class="fs-1 fw-semibold">Get Started Digital Learning</h5>
+                                    <p class="fw-normal">Learners must talk about what they are learning, write reflectively about it, relate it to past experiences, and apply it
+                                        to their daily lives.</p>
+                                    <div>
+                                        <button type="button" class="btn btn-primary py-2 px-4 fs-6 fw-semibold">Get
+                                            Started</button>
+                                    </div>
+                                </div> <!-- /text-overlay -->
                             </div>
 
-                        </nav>
+                            <div class="carousel-item text-white">
+                                <img src="images/slider/slide-2.jpg" class="img-fluid" alt="Cover image #2">
+                                <!-- carousel text- overlay -->
+                                <div class="carousel-caption overflow-hidden carousel-caption-fix">
+                                    <h5 class="fs-1 fw-semibold">Get Started Digital Learning</h5>
+                                    <p class="fw-normal">When it comes to eLearning, content means everything. If eLearning content is not masterfully designed...</p>
+                                    <div>
+                                        <button type="button" class="btn btn-primary py-2 px-4 fs-6 fw-semibold">Get
+                                            Started</button>
+                                    </div>
+                                </div> <!-- /text-overlay -->
+                            </div>
+
+                            <div class="carousel-item text-white">
+                                <img src="images/slider/slide-3.jpg" class="img-fluid" alt="Cover image #3">
+                                <!-- carousel text- overlay -->
+                                <div class="carousel-caption overflow-hidden carousel-caption-fix">
+                                    <h5 class="fs-1 fw-semibold">Get Started Digital Learning</h5>
+                                    <p class="fw-normal">Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their
+                                        potential.</p>
+                                    <div>
+                                        <button type="button" class="btn btn-primary py-2 px-4 fs-6 fw-semibold">Get
+                                            Started</button>
+                                    </div>
+                                </div> <!-- /text-overlay -->
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#coverSlider" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#coverSlider" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                </div> <!-- /container -->
-            </div> <!-- /navbar wrapper -->
-        </div>
+                </div>
+            </div>
+
+        </section> <!-- /container -->
+
     </header>
 
 
