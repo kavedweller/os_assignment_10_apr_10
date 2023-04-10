@@ -1,0 +1,49 @@
+body {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Dubugging CSS */
+/* div {
+  border: 1px solid black;
+} */
+
+/* .carousel-caption h5 */
+
+/* dimmed cover image for text legibility */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* carousel overlay texts positioning */
+.carousel-caption-fix {
+  max-height: 100%;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .carousel-caption-fix {
+    max-height: 60%;
+    max-width: 50%;
+    top: 50%;
+    bottom: initial;
+    transform: translateY(-50%);
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-caption p {
+    font-size: 12px;
+    max-height: 80px;
+  }
+}
