@@ -15,3 +15,9 @@
 	<li>Ensure that your website is accessible to all users, including those with disabilities.</li>  
 	<li>Test your website in multiple browsers and devices to ensure that it works as expected.</li>  
 </ol>
+
+#### Submit Instructions : 
+
+1. Submit your completed assignment, including the HTML and CSS files, 
+1. Submit your github repository link  
+1. Create a note.txt file in the repository and include your live link of your deployed version.(optional)  
