@@ -36,6 +36,9 @@ body {
   font-family: monospace;
 }
 
+footer {
+  bottom: 0;
+}
 @media (min-width: 768px) {
   .carousel-caption-fix {
     max-height: 60%;

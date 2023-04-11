@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="As part of studying web programming, this is a practice website.">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="container">
+        <nav class="navbar navbar-expand-lg mb-lg-5">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-semibold fs-2 col-md-2" href="#">Learning.io</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-md-8" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-lg-0 mx-auto fw-semibold fs-7">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" aria-current="page" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="pb-5">
+        <div class="container">
+
+            <div class="col-sm-12 col-md-12 col-md-12 pb-5">
+                <h2 class="display-5">Contact Us</h2>
+                <h6><em>We would love to hear from you!</em></h6>
+            </div>
+        </div>
+
+        <div id="contact" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>41, Tower Lane</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span>Foster City, Atlantis</p>
+                    <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+                </div>
+                <div class="col-md-8">
+                    <form action="" id="feedbackForm" class="needs-validation">
+                        <div class="row pb-3">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="validationName" name="name" placeholder="Name" type="text" required>
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="validationEmail" placeholder="Email" type="email" required>
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                        <div class="row pb-3">
+                            <div class="col-12 form-group">
+                                <input class="form-control" id="validationName" name="phone" placeholder="Phone Number" type="text" required>
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter phone no.
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="validationTextarea" placeholder="Message" required></textarea>
+                        <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                        </div>
+                        <br>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gap-1">
+                            <div class="col-md-12 form-group d-flex">
+                                <button class="btn btn-dark px-5 ms-auto" type="submit" role="button" onclick="validate('feedbackForm')">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br>
+        </div>
+
+    </main>
+    <footer class="mt-auto py-2 my-0 bg-dark text-white rounded-top">
+        <div class="text-center">
+            <p class="fs-2 fw-semibold">Learning Website</p>
+        </div>
+        <div class="text-center mx-auto my-0">
+            <p class="fs-6 fw-normal">Office 41, Tower Lane, Foster City,
+                Atlantis</p>
+        </div>
+        <div class="d-flex col-lg-8 col-md-12 text-center mx-auto">
+            <div class="w-50 pe-2 border-end border-2 d-flex justify-content-end">Privacy Ploicy</div>
+            <div class="w-50 ps-2 d-flex justify-content-start">Terms of use</div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        function validate(id) {
+            document.getElementById(id).classList.add('was-validated');
+        }
+    </script>
+</body>
+
+</html>
